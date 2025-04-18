@@ -1,0 +1,16 @@
+{
+    "users": [
+        {
+            "username": "admin",
+            "password": "$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi"
+        },
+        {
+            "username": "zaza",
+            "password": "$2y$10$LE2twxgZepM1RD7Ao4GfROXU\/cwveWBuWd7dyejhOVjRyT18TxWIC"
+        },
+        {
+            "username": "test",
+            "password": "$2y$10$7fm.mm9M3MzG4ssuk3J7S.7acJCOBGGsVcJ8hNZ1k2w1obR5O.zEe"
+        }
+    ]
+}

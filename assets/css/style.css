@@ -1,0 +1,665 @@
+/* General Styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%; /* Ensure full height */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f1f5f8;
+    color: #555;
+    font-size: 0.875rem;
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack children vertically */
+    min-height: 100vh; /* Ensure full viewport height */
+    transition: background-color 0.3s ease; /* Add transition */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #333;
+    font-weight: 700;
+}
+
+a {
+    color: #3e5774;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Add transition */
+}
+
+a:hover {
+    color: #2c3e50;
+    text-decoration: none;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    padding: 1rem 0;
+    margin-bottom: 0;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #3e5774;
+}
+
+.navbar-nav .nav-link {
+    color: #6c757d;
+    padding: 0.75rem 1rem;
+    transition: color 0.3s ease; /* Add transition */
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #3e5774;
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    padding: 1rem 1.5rem;
+    font-weight: 600;
+    color: #3e5774;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+/* Button Styles */
+.btn {
+    border-radius: 0.25rem;
+    padding: 0.75rem 1.25rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-primary {
+    background-color: #3e5774;
+    border-color: #3e5774;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #2c3e50;
+    border-color: #2c3e50;
+    color: #fff;
+}
+
+.btn-outline-primary {
+    border-color: #3e5774;
+    color: #3e5774;
+}
+
+.btn-outline-primary:hover {
+    background-color: #3e5774;
+    border-color: #3e5774;
+    color: #fff;
+}
+
+/* Form Styles */
+.form-control {
+    border-radius: 0.25rem;
+    border: 1px solid #ced4da;
+    padding: 0.75rem;
+    font-size: 0.875rem;
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Add transition */
+}
+
+.form-control:focus {
+    border-color: #5a8dee;
+    box-shadow: 0 0 0 0.2rem rgba(78, 115, 223, 0.25);
+}
+
+.form-label {
+    font-weight: 500;
+    color: #3e5774;
+}
+
+/* Table Styles */
+.table {
+    background-color: #fff;
+    margin-bottom: 2rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.table th,
+.table td {
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+    color: #67757c;
+    vertical-align: middle; /* Pastikan konten sejajar secara vertikal */
+    text-align: center; /* Pastikan konten sejajar secara horizontal */
+}
+
+.table th {
+    font-weight: 600;
+    color: #000; /* Ubah warna teks menjadi hitam */
+    background-color: #f8f9fa; /* Tambahkan latar belakang untuk header */
+}
+
+.table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Checkbox alignment */
+.student-checkbox {
+    display: flex;
+    justify-content: center; /* Pusatkan secara horizontal */
+    align-items: center; /* Pusatkan secara vertikal */
+}
+
+/* Action buttons alignment */
+.action-buttons {
+    display: flex;
+    justify-content: center; /* Pusatkan tombol secara horizontal */
+    gap: 0.5rem; /* Tambahkan jarak antar tombol */
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #263238;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 1rem 0;
+    text-align: center;
+    margin-top: auto; /* Push footer to bottom */
+}
+
+.footer a {
+    color: #fff;
+}
+
+/* Utility Classes */
+.mt-5 {
+    margin-top: 3rem !important;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+/* Fixed width columns */
+.col-checkbox { width: 40px; }
+.col-nim { width: 90px; }
+.col-nama { 
+    width: 20ch; /* Tetapkan lebar tetap 20 karakter */
+    max-width: 20ch; /* Batasi lebar maksimum */
+    overflow: hidden; /* Sembunyikan teks yang melampaui batas */
+    text-overflow: ellipsis; /* Tambahkan elipsis jika teks terlalu panjang */
+    white-space: nowrap; /* Pastikan teks tidak membungkus */
+}
+.col-nilai { 
+    width: 50px;
+    text-align: center; 
+}
+.col-grade { width: 50px; text-align: center; }
+.col-aksi { width: 120px; }
+
+/* Grade badges */
+.grade-badge {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+.grade-A { 
+    background-color: #e8f5e9;
+    color: #2e7d32;
+}
+.grade-B { 
+    background-color: #e3f2fd;
+    color: #1565c0;
+}
+.grade-C { 
+    background-color: #fff3e0;
+    color: #ef6c00;
+}
+.grade-D { 
+    background-color: #fbe9e7;
+    color: #d84315;
+}
+.grade-E { 
+    background-color: #ffebee;
+    color: #c62828;
+}
+
+/* Action buttons */
+.btn-sm {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+    border-radius: 4px;
+}
+.btn-warning {
+    background-color: #fff3e0;
+    border: 1px solid #ffe0b2;
+    color: #ef6c00;
+}
+.btn-danger {
+    background-color: #ffebee;
+    border: 1px solid #ffcdd2;
+    color: #c62828;
+}
+.btn-warning:hover {
+    background-color: #ffe0b2;
+    color: #e65100;
+}
+.btn-danger:hover {
+    background-color: #ffcdd2;
+    color: #b71c1c;
+}
+
+/* Checkbox styling */
+.student-checkbox,
+#selectAll {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    vertical-align: middle; /* Pastikan sejajar secara vertikal */
+    margin: 0; /* Hilangkan margin default */
+    position: relative; /* Pastikan posisi konsisten */
+    display: inline-block; /* Pastikan checkbox tetap inline */
+    accent-color: #3e5774; /* Warna tema sesuai tombol print */
+}
+
+/* Print Styles */
+@media print {
+    .navbar, .btn, .no-print, .pagination, #searchInput, #filterGrade {
+        display: none !important;
+    }
+    
+    @page {
+        margin: 2cm;
+    }
+    
+    .container {
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    
+    .card {
+        border: none !important;
+        box-shadow: none !important;
+    }
+    
+    table {
+        width: 100% !important;
+    }
+}
+
+/* Styles for index.php */
+.feature-card {
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.tech-icon {
+    font-size: 2rem;
+    color: #4e73df;
+}
+
+/* Styles for print_selected.php */
+@media screen {
+    body { 
+        background-color: #f8f9fa; 
+        padding-top: 50px;
+    }
+    .print-content { 
+        background: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+        padding: 30px;
+        margin: 30px auto;
+    }
+}
+
+@media print {
+    @page {
+        size: A4;
+        margin: 1.5cm;
+    }
+    
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto', sans-serif;
+        font-size: 11pt;
+        line-height: 1.4;
+        color: #2d3436;
+    }
+
+    .print-content {
+        padding: 0;
+        margin: 0;
+    }
+
+    .table-header {
+        border-bottom: 2px solid #2d3436;
+        margin-bottom: 1.5rem;
+        padding-bottom: 1rem;
+    }
+
+    .table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 1rem;
+    }
+
+    .table th {
+        background-color: #f8f9fa !important;
+        color: #2d3436;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        letter-spacing: 0.5px;
+        padding: 12px 8px;
+        border: 1px solid #dfe6e9;
+    }
+
+    .table td {
+        padding: 10px 8px;
+        border: 1px solid #dfe6e9;
+        color: #2d3436;
+    }
+
+    .table tr:nth-child(even) {
+        background-color: #f8f9fa !important;
+    }
+
+    .badge {
+        padding: 4px 12px;
+        border-radius: 15px;
+        font-size: 0.8rem;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        color: white !important;
+    }
+
+    .bg-success { background-color: #00b894 !important; }
+    .bg-primary { background-color: #0984e3 !important; }
+    .bg-warning { background-color: #fdcb6e !important; }
+    .bg-danger { background-color: #d63031 !important; }
+
+    .fw-bold { font-weight: 600 !important; }
+    
+    .timestamp {
+        margin-top: 2rem;
+        font-size: 0.8rem;
+        color: #636e72;
+        font-style: italic;
+        text-align: right;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        color: #2d3436;
+        font-weight: 600;
+        margin: 0;
+    }
+}
+
+/* New Styles */
+.jumbotron {
+    padding: 2rem 1rem;
+    background-color: #fff;
+    border-radius: 0.3rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.jumbotron h1 {
+    font-weight: 700;
+    color: #263238;
+}
+
+.jumbotron p {
+    color: #67757c;
+}
+
+/* Specific adjustments for better layout */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+main {
+    flex: 1; /* Take up remaining space */
+}
+
+/* Pagination Styles */
+.pagination .page-link {
+    color: #3e5774; /* Warna tema */
+    border: 1px solid #ced4da;
+    background-color: #fff; /* Warna latar belakang */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.pagination .page-link:hover {
+    background-color: #3e5774; /* Warna tema */
+    color: #fff;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #3e5774; /* Warna tema */
+    border-color: #3e5774; /* Warna tema */
+    color: #fff;
+}
+
+.pagination .page-item.disabled .page-link {
+    color: #ced4da;
+    background-color: #f8f9fa;
+    border-color: #ced4da;
+}
+
+.pagination .page-item:first-child .page-link,
+.pagination .page-item:last-child .page-link {
+    border-radius: 0.25rem; /* Membuat sudut tombol Previous dan Next melengkung */
+}
+
+/* Button Styles for Export and Print */
+.btn-primary {
+    background-color: #3e5774;
+    border-color: #3e5774;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #2c3e50;
+    border-color: #2c3e50;
+    color: #fff;
+}
+
+/* Edit Student Styles */
+.gear-button {
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gear-button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.gear-button.active {
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+}
+
+.gear-button img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+/* Keyframes untuk animasi setengah putaran */
+@keyframes spin-half {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes spin-half-reverse {
+    0% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.gear-button img.spinning {
+    animation: spin-half 0.5s ease-in-out;
+}
+
+.gear-button img.spinning-reverse {
+    animation: spin-half-reverse 0.5s ease-in-out;
+}
+
+/* Gaya untuk input file */
+.custom-file-input,
+.custom-date-input {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 1rem;
+    font-size: 0.875rem;
+    color: #555;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    padding: 0.375rem 0.75rem;
+    cursor: pointer;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-file-input:hover,
+.custom-date-input:hover {
+    border-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.custom-file-input:focus,
+.custom-date-input:focus {
+    border-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+
+.custom-file-label,
+.custom-date-label {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+    color: #555;
+}
+
+/* Ranking Badge Styles */
+.rank-badge {
+    display: inline-flex; /* Gunakan inline-flex untuk konsistensi */
+    justify-content: center; /* Pusatkan teks secara horizontal */
+    align-items: center; /* Pusatkan teks secara vertikal */
+    width: 30px; /* Sesuaikan ukuran dengan peringkat lainnya */
+    height: 30px; /* Sesuaikan ukuran dengan peringkat lainnya */
+    line-height: 30px; /* Sesuaikan agar teks berada di tengah */
+    border-radius: 50%;
+    font-size: 0.9rem; /* Sesuaikan ukuran teks */
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Default bayangan */
+    background: linear-gradient(145deg, #f0f0f0, #d9d9d9); /* Default gradien */
+}
+
+.rank-gold {
+    background: linear-gradient(145deg, #ffdf00, #ffd700); /* Warna emas */
+    box-shadow: 0 4px 6px rgba(255, 215, 0, 0.5); /* Bayangan emas */
+    background-color: #fffbea; /* Warna latar belakang */
+    border-left: 5px solid #ffc107; /* Border emas */
+}
+
+.rank-silver {
+    background: linear-gradient(145deg, #e0e0e0, #c0c0c0); /* Warna perak */
+    box-shadow: 0 4px 6px rgba(192, 192, 192, 0.5); /* Bayangan perak */
+    background-color: #f8f9fa; /* Warna latar belakang */
+    border-left: 5px solid #c0c0c0; /* Border perak */
+}
+
+.rank-bronze {
+    background: linear-gradient(145deg, #cd7f32, #b87333); /* Warna perunggu */
+    box-shadow: 0 4px 6px rgba(205, 127, 50, 0.5); /* Bayangan perunggu */
+    background-color: #fdf2e3; /* Warna latar belakang */
+    border-left: 5px solid #aa6b2b; /* Border perunggu */
+}
+
+.rank-fourth {
+    background: linear-gradient(145deg, #adb5bd, #6c757d); /* Warna abu-abu */
+    box-shadow: 0 4px 6px rgba(108, 117, 125, 0.5); /* Bayangan abu-abu */
+    background-color: #f8f9fa; /* Warna latar belakang */
+    border-left: 5px solid #6f7880; /* Border abu-abu */
+}
+
+.rank-gold td:first-child,
+.rank-silver td:first-child,
+.rank-bronze td:first-child,
+.rank-fourth td:first-child {
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* Jarak antara ikon dan teks */
+}
+
+.bi-trophy-fill {
+    font-size: 1.5rem; /* Ukuran ikon piala */
+}
+
+

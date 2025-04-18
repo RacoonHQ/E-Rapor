@@ -1,0 +1,132 @@
+{
+    "students": [
+        {
+            "nama": "Zaza Ferguso",
+            "nim": "2023230001",
+            "tugas": 80,
+            "uts": 90,
+            "uas": 85,
+            "nilai_akhir": 85,
+            "grade": "A",
+            "tanggal_lahir": "2005-09-05"
+        },
+        {
+            "nama": "Rizky Manik",
+            "nim": "2023230002",
+            "tugas": 60,
+            "uts": 70,
+            "uas": 75,
+            "nilai_akhir": 69,
+            "grade": "C"
+        },
+        {
+            "nama": "Dani Ahmad",
+            "nim": "2023230003",
+            "tugas": 50,
+            "uts": 60,
+            "uas": 55,
+            "nilai_akhir": 55,
+            "grade": "D"
+        },
+        {
+            "nama": "Rina Nose",
+            "nim": "2023230004",
+            "tugas": 90,
+            "uts": 95,
+            "uas": 100,
+            "nilai_akhir": 95.5,
+            "grade": "A"
+        },
+        {
+            "nama": "Ahmad Ramdhan",
+            "nim": "2023230005",
+            "tugas": 85,
+            "uts": 88,
+            "uas": 92,
+            "nilai_akhir": 88.7,
+            "grade": "A",
+            "tanggal_lahir": null
+        },
+        {
+            "nama": "Siti Nurhaliza",
+            "nim": "2023230006",
+            "tugas": 75,
+            "uts": 78,
+            "uas": 82,
+            "nilai_akhir": 78.7,
+            "grade": "B"
+        },
+        {
+            "nama": "Budi Santoso",
+            "nim": "2023230007",
+            "tugas": 65,
+            "uts": 70,
+            "uas": 68,
+            "nilai_akhir": 67.9,
+            "grade": "C"
+        },
+        {
+            "nama": "Linda Wijaya",
+            "nim": "2023230008",
+            "tugas": 95,
+            "uts": 92,
+            "uas": 94,
+            "nilai_akhir": 93.7,
+            "grade": "A"
+        },
+        {
+            "nama": "Rudi Hermawan",
+            "nim": "2023230009",
+            "tugas": 78,
+            "uts": 75,
+            "uas": 80,
+            "nilai_akhir": 77.9,
+            "grade": "B"
+        },
+        {
+            "nama": "Maya Putri",
+            "nim": "2023230010",
+            "tugas": 88,
+            "uts": 85,
+            "uas": 90,
+            "nilai_akhir": 87.9,
+            "grade": "A"
+        },
+        {
+            "nama": "Dedi Kurniawan",
+            "nim": "2023230011",
+            "tugas": 72,
+            "uts": 68,
+            "uas": 75,
+            "nilai_akhir": 71.9,
+            "grade": "B"
+        },
+        {
+            "nama": "Ratna Sari",
+            "nim": "2023230012",
+            "tugas": 82,
+            "uts": 88,
+            "uas": 85,
+            "nilai_akhir": 85.1,
+            "grade": "A"
+        },
+        {
+            "nama": "Agus Setiawan",
+            "nim": "2023230013",
+            "tugas": 62,
+            "uts": 65,
+            "uas": 60,
+            "nilai_akhir": 62.3,
+            "grade": "C"
+        },
+        {
+            "nama": "Nina Melinda",
+            "nim": "2023230014",
+            "tugas": 92,
+            "uts": 95,
+            "uas": 88,
+            "nilai_akhir": 91.4,
+            "grade": "A"
+        }
+    ]
+}
