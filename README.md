@@ -1,7 +1,7 @@
 # E-Rapor Universitas Bakwan
 
 Sistem penilaian mahasiswa berbasis web menggunakan PHP dan JSON.
-**e-raporub.42web.io**
+### http://e-raporub.42web.io/
 
 ## Struktur Folder
 ```
